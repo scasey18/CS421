@@ -1,0 +1,156 @@
+vagrant@ubuntu-xenial:~$ mongo
+MongoDB shell version: 2.6.10
+connecting to: test
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        http://docs.mongodb.org/
+Questions? Try the support group
+        http://groups.google.com/group/mongodb-user
+Server has startup warnings:
+2020-07-08T18:25:38.193+0000 [initandlisten]
+2020-07-08T18:25:38.193+0000 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+2020-07-08T18:25:38.193+0000 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+2020-07-08T18:25:38.193+0000 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+2020-07-08T18:25:38.193+0000 [initandlisten]
+> var card = {"rank":"ace","suit":"clubs"}
+> card
+{ "rank" : "ace", "suit" : "clubs" }
+> var clubs = []
+> ["one","two","three","four"].forEach(
+... function(rank){
+... clubs.push({"rank":rank,"suit":"clubs"})
+... });
+> clubs
+[
+        {
+                "rank" : "one",
+                "suit" : "clubs"
+        },
+        {
+                "rank" : "two",
+                "suit" : "clubs"
+        },
+        {
+                "rank" : "three",
+                "suit" : "clubs"
+        },
+        {
+                "rank" : "four",
+                "suit" : "clubs"
+        }
+]
+> show dbs
+admin  (empty)
+local  0.078GB
+> use test
+switched to db test
+> show dbs
+admin  (empty)
+local  0.078GB
+> show collections;
+> use test
+switched to db test
+> show collections;
+> db.cards.save(card);
+WriteResult({ "nInserted" : 1 })
+> show collections;
+cards
+system.indexes
+> db.cards.find();
+{ "_id" : ObjectId("5f061116a958418b2056856c"), "rank" : "ace", "suit" : "clubs" }
+> db.cards.save(clubs);
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 4,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.cards.find();
+{ "_id" : ObjectId("5f061116a958418b2056856c"), "rank" : "ace", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856e"), "rank" : "one", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856f"), "rank" : "two", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568570"), "rank" : "three", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568571"), "rank" : "four", "suit" : "clubs" }
+> hearts = [];
+[ ]
+> hearts
+[ ]
+> ["four","five","six","seven"].forEach(
+... function(rank){
+... hearts.push({"rank":rank,"suit":"hearts"})
+... });
+> hearts
+[
+        {
+                "rank" : "four",
+                "suit" : "hearts"
+        },
+        {
+                "rank" : "five",
+                "suit" : "hearts"
+        },
+        {
+                "rank" : "six",
+                "suit" : "hearts"
+        },
+        {
+                "rank" : "seven",
+                "suit" : "hearts"
+        }
+]
+> db.cards.save(hearts);
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 4,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+> db.cards.find();
+{ "_id" : ObjectId("5f061116a958418b2056856c"), "rank" : "ace", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856e"), "rank" : "one", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856f"), "rank" : "two", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568570"), "rank" : "three", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568571"), "rank" : "four", "suit" : "clubs" }
+{ "_id" : ObjectId("5f0611f1a958418b20568573"), "rank" : "four", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568574"), "rank" : "five", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568575"), "rank" : "six", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568576"), "rank" : "seven", "suit" : "hearts" }
+> var twos = db.cards.find({"rank":"two"});
+> twos
+{ "_id" : ObjectId("5f06115ea958418b2056856f"), "rank" : "two", "suit" : "clubs" }
+> var apps = db.cards.find({"rank":"six"});
+> apps
+{ "_id" : ObjectId("5f0611f1a958418b20568575"), "rank" : "six", "suit" : "hearts" }
+> db.cards.remove({"rank":"two"});
+WriteResult({ "nRemoved" : 1 })
+> db.cards.find();
+{ "_id" : ObjectId("5f061116a958418b2056856c"), "rank" : "ace", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856e"), "rank" : "one", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568570"), "rank" : "three", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568571"), "rank" : "four", "suit" : "clubs" }
+{ "_id" : ObjectId("5f0611f1a958418b20568573"), "rank" : "four", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568574"), "rank" : "five", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568575"), "rank" : "six", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568576"), "rank" : "seven", "suit" : "hearts" }
+> db.cards.remove({"rank":"three"});
+WriteResult({ "nRemoved" : 1 })
+> db.cards.find();
+{ "_id" : ObjectId("5f061116a958418b2056856c"), "rank" : "ace", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b2056856e"), "rank" : "one", "suit" : "clubs" }
+{ "_id" : ObjectId("5f06115ea958418b20568571"), "rank" : "four", "suit" : "clubs" }
+{ "_id" : ObjectId("5f0611f1a958418b20568573"), "rank" : "four", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568574"), "rank" : "five", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568575"), "rank" : "six", "suit" : "hearts" }
+{ "_id" : ObjectId("5f0611f1a958418b20568576"), "rank" : "seven", "suit" : "hearts" }
+> exit
+bye
+vagrant@ubuntu-xenial:~$

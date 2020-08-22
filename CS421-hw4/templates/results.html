@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <script src="{{ url_for('static',filename='js/results.js') }}"></script>
+	<title>HW3 - Results</title>
+</head>
+
+<body>
+	<div id="UpdateForm" hidden=true>
+		<form action='{{request.path}}' method='post'>
+			<label>ID:</label><input name="id" readonly=true><br>
+			<label>Name:</label><input name="name" type="text"><br>
+			<label>Email:</label><input name="email" type='text'><br>
+			<label>Phone Num:</label><input name="phonenum" type='number'><br>
+			<label>Address:</label><input name="address" type='text'><br>
+			<button type='submit'>Update</button>
+			<button type='button' onclick="closeForm()">Cancel</button>
+		</form>
+	</div>
+	<div id="StudentTableDiv">
+		<table>
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Name</td>
+					<td>Email</td>
+					<td>PhoneNum</td>
+					<td>Address</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for Record in Records %}
+				<tr>
+					<td id="id{{Record.rID}}">{{Record.rID}}</td>
+					<td id="name{{Record.rID}}">{{Record.name}}</td>
+					<td id="email{{Record.rID}}">{{Record.email}}</td>
+					<td id="phonenum{{Record.rID}}">{{Record.phonenum}}</td>
+					<td id="address{{Record.rID}}">{{Record.address}}</td>
+					<td>
+						<button value='{{Record.rID}}' onclick="updateRecord(value)">Update</button>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<form action='/'>
+		<button type='submit'>Return to Home</button>
+	</form>
+</body>
+
+
+</html>

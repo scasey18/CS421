@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <script src="{{ url_for('static',filename='js/home.js') }}"></script>
+	<title>HW4 - Yellow Pages</title>
+</head>
+
+<body>
+	<div id="AddRecordForm">
+		<h3>Add Record</h3>
+		<form action='{{request.path}}' method='post'>
+			<input name='Record' value="Add" hidden=true>
+			<label>Name:</label><br>
+			<input name="name" type='text'><br>
+			<label>Email:</label><br>
+			<input name="email" type='text'><br>
+			<label>PhoneNum:</label><br>
+			<input name="phonenum" type='number'><br>
+			<label>Address:</label><br>
+			<input name="address" type='text'><br>
+			<input type='submit' value='Add Record'><br>
+		</form>
+	</div>
+	<div id="DeleteRecordForm">
+		<h3>Delete Record</h3>
+		<form action='{{request.path}}' method='post'>
+			<input name='Record' value="Remove" hidden=true>
+			<label>ID:</label>
+			<input name="id" type='number'>
+			<input type='submit' value='Delete Record'><br>
+		</form>
+	</div>
+	<div>
+		<h3>Show Records</h3>
+		<a href='/results'><button>All</button></a>
+	</div>
+</body>
+
+
+</html>

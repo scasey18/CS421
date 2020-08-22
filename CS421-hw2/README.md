@@ -1,0 +1,1 @@
+Drop this inside a vagrant app folder that has express installed for it to work. Heavily based on Learning Web App Development Chapter 1-6.

@@ -1,0 +1,25 @@
+0000000000000000000000000000000000000000 d87d255841cfb76b479b8bdfc9bda4f4ad20b92c Samuel Casey <scasey18@uab.edu> 1593633617 -0500	clone: from git@gitlab.cs.uab.edu:scasey18/CS421-hw2.git
+d87d255841cfb76b479b8bdfc9bda4f4ad20b92c 923721fe7beddcbf13e43e696bcd9c8b10861519 Samuel Casey <scasey018@att.net> 1593635779 -0500	commit: add default index.html to repo
+923721fe7beddcbf13e43e696bcd9c8b10861519 c8cd406cb744f7ad9dac7011bcfe82b1561a65c7 Samuel Casey <scasey018@att.net> 1593636351 -0500	commit: added all content for the home page of Amazerific (Chapter 2)
+c8cd406cb744f7ad9dac7011bcfe82b1561a65c7 c33e192b70508e5a2c765b85b0d7bace7d48198c Samuel Casey <scasey018@att.net> 1593636396 -0500	commit: Added faq page
+c33e192b70508e5a2c765b85b0d7bace7d48198c 42631e67981daae419a92d9b0bfc60f466f80adf Samuel Casey <scasey018@att.net> 1593637430 -0500	commit: Add reset.css and style.css, link in index.html
+42631e67981daae419a92d9b0bfc60f466f80adf 556538dde552c29a97ce5bc97feecf111c7a9cd5 Samuel Casey <scasey018@att.net> 1593637476 -0500	commit: add reference to css files
+556538dde552c29a97ce5bc97feecf111c7a9cd5 a1092827ff828b104d62be44863be06ab59d00e2 Samuel Casey <scasey018@att.net> 1593640181 -0500	commit: Applying Chapter 2. The Grid
+a1092827ff828b104d62be44863be06ab59d00e2 4361b1e8504bf401e0fbce1419b80bd0cfe2532d Samuel Casey <scasey018@att.net> 1593660071 -0500	commit: Added font for adding and manipulating fonts
+4361b1e8504bf401e0fbce1419b80bd0cfe2532d 058e82d26dd82089bb1d647171a454421b7acf61 Samuel Casey <scasey018@att.net> 1593660097 -0500	commit: Made changes to reflect the example and apply fonts
+058e82d26dd82089bb1d647171a454421b7acf61 6c4bb8eba3b15d7abedadf66a9ec63f6d8bfb393 Samuel Casey <scasey018@att.net> 1593660127 -0500	commit: Added div and moved img to allow for better looking page
+6c4bb8eba3b15d7abedadf66a9ec63f6d8bfb393 723a9ad28749fc005399122324b8bb2da3a8df64 Samuel Casey <scasey018@att.net> 1593660603 -0500	commit: apply changes for faq.html
+723a9ad28749fc005399122324b8bb2da3a8df64 776ecdb39a1f1e2f0f5c2f57465ec3e1fe3e9a6f Samuel Casey <scasey018@att.net> 1593660629 -0500	commit: Changed text behavior to match specification
+776ecdb39a1f1e2f0f5c2f57465ec3e1fe3e9a6f 06c7cc83bdccad82fa5ecc1797e232d1ff99758b Samuel Casey <scasey018@att.net> 1593662087 -0500	commit: made it closer to the figure 3-21
+06c7cc83bdccad82fa5ecc1797e232d1ff99758b 729bb268caaa89c2798104ddd847e83357dd90fa Samuel Casey <scasey018@att.net> 1593664815 -0500	commit: replace previous main with space for the list
+729bb268caaa89c2798104ddd847e83357dd90fa dc858d431ca7c62f2deaaa41cb20f137e8d26eb6 Samuel Casey <scasey018@att.net> 1593664829 -0500	commit: beginning js for the list
+dc858d431ca7c62f2deaaa41cb20f137e8d26eb6 d2985f27286cd5eaf3c35a31d3c71d666c10dd07 Samuel Casey <scasey018@att.net> 1593664847 -0500	commit: beginning css for the list
+d2985f27286cd5eaf3c35a31d3c71d666c10dd07 bf27318f68d014be3c79d21af2735ad90da9069a Samuel Casey <scasey018@att.net> 1593665981 -0500	commit: added the ability to add items to the list
+bf27318f68d014be3c79d21af2735ad90da9069a 469123f514c9e8a5bb2a54715bf83775484b8a5a Samuel Casey <scasey018@att.net> 1593667046 -0500	commit: fix error from last code
+469123f514c9e8a5bb2a54715bf83775484b8a5a fc7f1a0a212b1a1bc2c60a37944b81aec9a1efc6 Samuel Casey <scasey018@att.net> 1593807393 -0500	commit: Added the json portion of the assignment
+fc7f1a0a212b1a1bc2c60a37944b81aec9a1efc6 e6638119129526ee95d18bcd5657bf00866b37e3 Samuel Casey <scasey018@att.net> 1593808309 -0500	commit: finished json and Chapter 5
+e6638119129526ee95d18bcd5657bf00866b37e3 8840f29805bb96e713bf45b4264dae1685e590d7 Samuel Casey <scasey018@att.net> 1593812119 -0500	commit: renamed todo.jsons to todo.OLD.json
+8840f29805bb96e713bf45b4264dae1685e590d7 8bb50713e333d4a862958097257abd364dc1362f Samuel Casey <scasey018@att.net> 1593812175 -0500	commit: implemented the server post methods from Chapter 6
+8bb50713e333d4a862958097257abd364dc1362f 05ad30389f31e178a1edd0c6934537a37e469d23 Samuel Casey <scasey018@att.net> 1593812202 -0500	commit: implemented the server.js for Vagrant node server with express
+05ad30389f31e178a1edd0c6934537a37e469d23 1c52c421dc6ab5d4a2e0b917d99e60a06b73dd9d Samuel Casey <scasey018@att.net> 1593812302 -0500	commit: added gitignore so I dont copy a ton of node_modules files
+1c52c421dc6ab5d4a2e0b917d99e60a06b73dd9d bfe6c94439b3f727c6ba65f721dc853b5a9bfb01 Samuel Casey <scasey018@att.net> 1593812485 -0500	commit: Added a README

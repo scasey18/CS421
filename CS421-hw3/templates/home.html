@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <script src="{{ url_for('static',filename='js/home.js') }}"></script>
+	<title>HW3 - Grades</title>
+</head>
+
+<body>
+	<div id="AddStudentForm">
+		<h3>Add Student</h3>
+		<form action='{{request.path}}' method='post'>
+			<input name='Student' value="Add" hidden=true>
+			<label>Name:</label><br>
+			<input name="name" type='text'><br>
+			<label>Grade:</label><br>
+			<input name="grade" type='number'><br>
+			<input type='submit' value='Add Student'><br>
+		</form>
+	</div>
+	<div id="DeleteStudentForm">
+		<h3>Delete Student</h3>
+		<form action='{{request.path}}' method='post'>
+			<input name='Student' value="Remove" hidden=true>
+			<label>ID:</label>
+			<input name="id" type='number'>
+			<input type='submit' value='Delete Student'><br>
+		</form>
+	</div>
+	<div>
+		<h3>Show Students</h3>
+		<a href='/results?lowest=All'><button>All</button></a>
+		<a href='/results?lowest=85'><button>Above 85</button></a>
+	</div>
+</body>
+
+
+</html>

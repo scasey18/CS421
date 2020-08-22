@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab 02</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="textBox">
+    <input type="text" id="overallEquation" disabled="disabled">
+    <br>
+    <input type="text" id="calcEntry" disabled="disabled">
+  </div>
+  <table id="numpad">
+    <tr>
+      <td><input type="button" value="C" onclick="Clear()"></td>
+      <td><input type="button" value="CE" onclick="ClearAll()"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="sin" onclick="setCalc(Math.sin(getCalc()))"></td>
+      <td><input type="button" value="cos" onclick="setCalc(Math.cos(getCalc()))"></td>
+      <td><input type="button" value="tan" onclick="setCalc(Math.tan(getCalc()))"></td>
+      <td><input type="button" value="sqrt" onclick="setCalc(Math.sqrt(getCalc()))"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="addtotext(value)"></td>
+      <td><input type="button" value="2" onclick="addtotext(value)"></td>
+      <td><input type="button" value="3" onclick="addtotext(value)"></td>
+      <td><input type="button" value="*" onclick="calculate(value)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="addtotext(value)"></td>
+      <td><input type="button" value="5" onclick="addtotext(value)"></td>
+      <td><input type="button" value="6" onclick="addtotext(value)"></td>
+      <td><input type="button" value="+" onclick="calculate(value)"></td>
+      
+    </tr>
+    <tr>
+      <td><input type="button" value="7" onclick="addtotext(value)"></td>
+      <td><input type="button" value="8" onclick="addtotext(value)"></td>
+      <td><input type="button" value="9" onclick="addtotext(value)"></td>
+      <td><input type="button" value="-" onclick="calculate(value)"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="." onclick="addtotext(value)"></td>
+      <td><input type="button" value="0" onclick="addtotext(value)"></td>
+      <td><input type="button" value="=" onclick="calculate(value)"></td>
+      <td><input type="button" value="/" onclick="calculate(value)"></td>
+    </tr>
+  </table>
+</body>
+
+</html>

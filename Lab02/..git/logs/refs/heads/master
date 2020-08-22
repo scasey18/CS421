@@ -1,0 +1,11 @@
+0000000000000000000000000000000000000000 9735458aff033d2bb7d9b0f205a91d5d623e6264 Samuel Casey <scasey018@att.net> 1592419351 -0500	clone: from https://gitlab.cs.uab.edu/scasey18/Lab02.git
+9735458aff033d2bb7d9b0f205a91d5d623e6264 ce4fdbfd6edab1d1dd35d3c4bf950be09c726099 Samuel Casey <scasey018@att.net> 1592421322 -0500	commit: add numpad of buttons and referenced the js file
+ce4fdbfd6edab1d1dd35d3c4bf950be09c726099 bc55357cbf75c34b275b26fc846b48c5c161f8cd Samuel Casey <scasey018@att.net> 1592421342 -0500	commit: added initial function to add values
+bc55357cbf75c34b275b26fc846b48c5c161f8cd 623e95cfbd406779f880beeb06023f5d292bf0df Samuel Casey <scasey018@att.net> 1592453074 -0500	commit: implement Sci function for app buttons
+623e95cfbd406779f880beeb06023f5d292bf0df 7b221ed20685500caa95d9544af557a602ee59a4 Samuel Casey <scasey018@att.net> 1592453091 -0500	commit: Added methods to perform calculation
+7b221ed20685500caa95d9544af557a602ee59a4 0c5f9a0ef12ad061ee9988b960503ac4d6a277a3 Samuel Casey <scasey018@att.net> 1592457412 -0500	commit: remove no longer needed console log
+0c5f9a0ef12ad061ee9988b960503ac4d6a277a3 13c32b7ea29b3178a97e8253d3e83e4c40cec9f4 Samuel Casey <scasey018@att.net> 1592457457 -0500	commit: reorganize numpad and add necessary buttons
+13c32b7ea29b3178a97e8253d3e83e4c40cec9f4 388436a0cfbdc91d2ee81ac65f46d355ff9cd21c Samuel Casey <scasey018@att.net> 1592457480 -0500	commit: added initial design for webpage
+388436a0cfbdc91d2ee81ac65f46d355ff9cd21c 5f87bb84da3a7a628167d0fab04b567d4c5298ea Samuel Casey <scasey018@att.net> 1592502366 -0500	commit: Moved the scientific methods as a new function seemed unnecessary
+5f87bb84da3a7a628167d0fab04b567d4c5298ea 00db21cd4742c282c8048bb8cfb64e9b3dc108a4 Samuel Casey <scasey018@att.net> 1592623862 -0500	commit: moved to switch case as it is better formatted
+00db21cd4742c282c8048bb8cfb64e9b3dc108a4 52c57901ed9443fc9d04ce0f8d89797dfa756575 Samuel Casey <scasey018@att.net> 1592624363 -0500	commit: fixed error where previous calculations would stay on screen

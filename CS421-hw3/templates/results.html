@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+    <script src="{{ url_for('static',filename='js/results.js') }}"></script>
+	<title>HW3 - Results</title>
+</head>
+
+<body>
+	<div id="UpdateForm" hidden=true>
+		<form action='{{request.path}}' method='post'>
+			<label>ID:</label><input name="id" readonly=true><br>
+			<label>Name:</label><input name="name" type="text"><br>
+			<label>Grade:</label><input name="grade" type='number'><br>
+			<button type='submit'>Update</button>
+			<button type='button' onclick="closeForm()">Cancel</button>
+		</form>
+	</div>
+	<div id="StudentTableDiv">
+		<table>
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Name</td>
+					<td>Grade</td>
+				</tr>
+			</thead>
+			<tbody>
+				{% for student in students %}
+				<tr>
+					<td id="id{{student.studID}}">{{student.studID}}</td>
+					<td id="name{{student.studID}}">{{student.name}}</td>
+					<td id="grade{{student.studID}}">{{student.grade}}</td>
+					<td>
+						<button value='{{student.studID}}' onclick="updateStudent(value)">Update</button>
+					</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
+	<form action='/'>
+		<button type='submit'>Return to Home</button>
+	</form>
+</body>
+
+
+</html>

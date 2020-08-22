@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>Welcome to Password Check</p>
+<p>Let's see if your Password is secure!</p>
+<p>Fill out the form below with a User Name and password that has these restraints</p>
+<ul>
+	<li>Must have an upper case letter somewhere.</li>
+	<li>Must have a lowercase letter somewhere.</li>
+	<li>Must have a number at the end.</li>
+</ul>
+<form action='/results' method='post'>
+	<label>UserName:</label>
+	<input type='text' id='uname' name='uname'>
+	<label>Password:</label>
+	<input type='text' id='pwd' name='pwd'>
+	<input type='submit' value='Submit Form'>
+</form>
+{% endblock %}
