@@ -1,0 +1,56 @@
+body {
+    background-color: #222;
+}
+
+figcaption {
+    color: orange;
+}
+
+P.Menu {
+    text-align: center;
+    color: #C0C000;
+    padding: 10px;
+    font-size: larger;
+    font-family: "Arial";
+}
+
+P.Menu a {
+    padding: 5px;
+}
+
+form.Links {
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.Photos img {
+    width: 250px;
+    height: 150px;
+    padding: 10px;
+}
+
+table#Links img {
+    width: 100px;
+    height: 100px;
+    padding: 50px;
+}
+
+div#photo {
+    float: left;
+    padding: 30px;
+}
+
+div#desc {
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: "Arial";
+}
+
+div#desc li {
+    font-size: larger;
+}
